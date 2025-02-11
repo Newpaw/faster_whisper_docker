@@ -16,7 +16,7 @@ RUN apt-get update && \
 # Upgrade pip and install required Python packages.
 # Since we are not using a proper requirements.txt here, we'll install the minimal dependencies.
 RUN pip install --upgrade pip && \
-    pip install fastapi uvicorn python-dotenv faster-whisper
+    pip install fastapi uvicorn python-dotenv faster-whisper python-multipart
 
 # Copy the project files into the container.
 COPY . .
